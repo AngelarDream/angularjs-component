@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .box {
+            width: 480px;
+            height: 360px;
+            background-color: red;
+        }
+        th, td {
+            padding: 4px 16px;
+            text-align: center;
+        }
+
+        .col-sort {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="DemoCtrl">
+        <div class="box" ng-show="showDemo">{{demoText}}</div>
+        <super-table></super-table>
+    </div>
+    <script src="angular.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

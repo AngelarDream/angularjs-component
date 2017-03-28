@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .super-fields, .field {
+            width: 100%;
+        }
+
+        .super-fields .field {
+            clear: both;
+            height: 32px;
+            padding: 6px 0;
+        }
+
+        .super-fields .field span {
+            float: left;
+            margin: 4px;
+        }
+
+        .super-fields input, .super-fields select {
+            width: 320px;
+            height: 24px;
+        }
+
+        .super-fields select {
+            height: 32px;
+            width: 324px;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="DemoCtrl">
+        <div class="box" ng-show="showDemo">{{demoText}}</div>
+        <super-fields class="super-fields"></super-fields>
+    </div>
+    <script src="angular.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
